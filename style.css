@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Navigation */
+nav {
+  background: #222;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: #333;
+  color: white;
+}
+
+/* Sections */
+section {
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Skills Section */
+.skills span {
+  display: inline-block;
+  background: #222;
+  color: white;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/* Projects Section */
+#projects {
+  background: #fff;
+}
+
+.project-card {
+  background: #f4f4f4;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+
+/* ====================================== */
+/* Responsive Design for Tablets & Phones  */
+/* ====================================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section {
+    padding: 30px 40px;
+  }
+
+  .hero {
+    padding: 70px 30px;
+    text-align: center;
+  }
+
+  .skills span {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+
+  .project-card {
+    padding: 18px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  section {
+    padding: 20px;
+    margin: 0 10px;
+  }
+
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .skills span {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+}
+
+/* Extra Small Phones */
+@media (max-width: 480px) {
+  section h2 {
+    font-size: 20px;
+  }
+}
